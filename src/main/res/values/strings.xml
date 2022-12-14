@@ -1,23 +1,55 @@
 <resources>
     <string name="app_name">Cryptocurrency Dashboard</string>
-    <string name="col1">Name</string>
-    <string name="col2">Price</string>
-    <string name="col3">+/-</string>
-    <string name="col4">%</string>
-    <string name="col5">Updated</string>
-    <string name="col1BTC">BTC</string>
+
+    <string name="dollar_logo_description">Dollar Sign</string>
+    <string name="coin_logo_description">Dollar Sign</string>
+
+    <string name="guidesl1"><b>  *  NAME :</b> The name of the cryptocurrency.</string>
+    <string name="guidesl2"><b>  *  PRICE :</b> The value of 1 cryptocurrency in USD.</string>
+    <string name="guidesl3"><b>  *  CHANGE :</b> How the value of the cryptocurrency change in the last hour.</string>
+    <string name="guidesl4"><b>  *  MARKET CAP :</b> Market Capitalization, depicts the total value of all the coins that have been mined.</string>
+    <string name="guidesl5"><b>  *  C_SUPPLY :</b> Circulating Supply, the number of coins or tokens of the cryptocurrency that are publicly available to buy or sell</string>
+
+    <!-- Data collected at: https://markets.businessinsider.com/cryptocurrencies -->
+
+    <string name="col1">NAME</string>
+    <string name="col2">PRICE</string>
+    <string name="col3">CHANGE</string>
+    <string name="col4">MARKET CAP</string>
+    <string name="col5">C_SUPPLY</string>
+
+    <!-- BitCoin -->
+    <string name="col1BTC"><b>BTC</b></string>
     <string name="col2BTC">17,822.0801</string>
-    <string name="col3BTC">44.19</string>
-    <string name="col4BTC">0.25%</string>
-    <string name="col5BTC">07:01:08 AM</string>
-    <string name="col1ETH">ETH</string>
+    <string name="col3BTC">325.35</string>
+    <string name="col4BTC">341.73 B</string>
+    <string name="col5BTC">19,233,293</string>
+
+    <!-- Ethereum -->
+    <string name="col1ETH"><b>ETH</b></string>
     <string name="col2ETH">1,325.8947</string>
-    <string name="col3ETH">5.83</string>
-    <string name="col4ETH">0.44%</string>
-    <string name="col5ETH">07:01:09 AM</string>
-    <string name="col1BNC">BNC</string>
-    <string name="col2BNC">274.6417</string>
-    <string name="col3BNC">2.79</string>
-    <string name="col4BNC">1.02%</string>
-    <string name="col5BNC">12:25:00 AM</string>
+    <string name="col3ETH">16.23</string>
+    <string name="col4ETH">161.39 B</string>
+    <string name="col5ETH">122,373,866</string>
+
+    <!-- Tether -->
+    <string name="col1USDT"><b>USDT</b></string>
+    <string name="col2USDT">1.0000</string>
+    <string name="col3USDT">0.00</string>
+    <string name="col4USDT">65.79 B</string>
+    <string name="col5USDT">65,792,060,111</string>
+
+    <!-- Binance Coin -->
+    <string name="col1BNB"><b>BNB</b></string>
+    <string name="col2BNB">274.6417</string>
+    <string name="col3BNB">2.79</string>
+    <string name="col4BNB">43.93 B</string>
+    <string name="col5BNB">159,967,922</string>
+
+    <!-- Dogecoin Coin -->
+    <string name="col1DOGE"><b>DOGE</b></string>
+    <string name="col2DOGE">0.0911</string>
+    <string name="col3DOGE">0.00</string>
+    <string name="col4DOGE">12.09 B</string>
+    <string name="col5DOGE">132,670,764,300</string>
 </resources>
