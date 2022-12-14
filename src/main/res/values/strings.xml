@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Cryptocurrency Dashboard</string>
+    <string name="col1">Name</string>
+    <string name="col2">Price</string>
+    <string name="col3">+/-</string>
+    <string name="col4">%</string>
+    <string name="col5">Updated</string>
+    <string name="col1BTC">BTC</string>
+    <string name="col2BTC">17,822.0801</string>
+    <string name="col3BTC">44.19</string>
+    <string name="col4BTC">0.25%</string>
+    <string name="col5BTC">07:01:08 AM</string>
+    <string name="col1ETH">ETH</string>
+    <string name="col2ETH">1,325.8947</string>
+    <string name="col3ETH">5.83</string>
+    <string name="col4ETH">0.44%</string>
+    <string name="col5ETH">07:01:09 AM</string>
+    <string name="col1BNC">BNC</string>
+    <string name="col2BNC">274.6417</string>
+    <string name="col3BNC">2.79</string>
+    <string name="col4BNC">1.02%</string>
+    <string name="col5BNC">12:25:00 AM</string>
+</resources>
