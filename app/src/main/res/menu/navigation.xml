@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_euro"
+        android:icon="@drawable/ic_euro"
+        android:title="Euro" />
+    <item android:id="@+id/action_dollar"
+        android:icon="@drawable/dollar_logo"
+        android:title="Dollar" />
+</menu>
