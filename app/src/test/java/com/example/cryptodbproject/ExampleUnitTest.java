@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.cryptodbproject;
 
 import org.junit.Test;
 

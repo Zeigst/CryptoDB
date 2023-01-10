@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/idCVCurrency"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_margin="5dp"
+	app:cardBackgroundColor="@color/black_shade_2"
+	app:cardCornerRadius="5dp"
+	app:cardElevation="3dp">
+
+	<RelativeLayout
+		android:id="@+id/idRLCurrency"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<!--text view for displaying symbol-->
+
+		<!--text view for displaying currency name-->
+
+
+		<!--text view for displaying currency rate-->
+		<TextView
+			android:id="@+id/idTVRate"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentEnd="true"
+			android:layout_marginEnd="5dp"
+			android:layout_marginTop="5dp"
+			android:paddingEnd="5dp"
+			android:paddingTop="5dp"
+			android:text="123456"
+			android:textSize="18sp"
+			android:textColor="@color/white" />
+
+		<ImageView
+			android:id="@+id/idCoinIcon"
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:src="@drawable/money1"
+			android:layout_alignParentStart="true"
+			android:layout_centerVertical="true"
+			android:layout_marginStart="10dp"
+			android:layout_marginEnd="10dp"/>
+
+		<TextView
+			android:id="@+id/idTVSymbol"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_toStartOf="@id/idTVRate"
+			android:layout_toEndOf="@+id/idCoinIcon"
+			android:layout_marginTop="5dp"
+			android:paddingTop="5dp"
+			android:text="Symbol"
+			android:textSize="18sp"
+			android:textColor="@color/white"
+			android:textStyle="bold" />
+
+		<TextView
+			android:id="@+id/idTVName"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/idTVSymbol"
+			android:layout_toEndOf="@id/idCoinIcon"
+			android:layout_marginBottom="5dp"
+			android:paddingBottom="5dp"
+			android:text="Name"
+			android:textColor="@color/white"
+			android:textSize="16sp" />
+
+	</RelativeLayout>
+
+</androidx.cardview.widget.CardView>

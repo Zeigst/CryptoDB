@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrackerFragment"
+    android:background="@drawable/background">
+
+    <EditText
+        android:id="@+id/idEdtCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:focusable="auto"
+        android:hint="@string/search_cc_hint"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="#50000000"
+        android:drawableStart="@drawable/money2"
+        android:drawablePadding="10dp"
+        android:padding="20dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idRVcurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idEdtCurrency"
+        android:layout_marginTop="0dp"
+        tools:listitem="@layout/currency_rv_item" />
+
+    <ProgressBar
+        android:id="@+id/idPBLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>
