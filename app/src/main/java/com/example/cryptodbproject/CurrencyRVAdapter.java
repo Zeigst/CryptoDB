@@ -22,10 +22,8 @@ public class CurrencyRVAdapter extends RecyclerView.Adapter<CurrencyRVAdapter.Cu
         this.context = context;
     }
 
-    // below is the method to filter our list.
+   // Filter list function
     public void filterList(ArrayList<CurrencyModel> filterlist) {
-        // adding filtered list to our
-        // array list and notifying data set changed
         currencyModels = filterlist;
         notifyDataSetChanged();
     }
@@ -33,17 +31,14 @@ public class CurrencyRVAdapter extends RecyclerView.Adapter<CurrencyRVAdapter.Cu
     @NonNull
     @Override
     public CurrencyRVAdapter.CurrencyViewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        // this method is use to inflate the layout file
-        // which we have created for our recycler view.
-        // on below line we are inflating our layout file.
+        // Inflate the layout file
         View view = LayoutInflater.from(context).inflate(R.layout.currency_rv_item, parent, false);
         return new CurrencyRVAdapter.CurrencyViewholder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull CurrencyRVAdapter.CurrencyViewholder holder, int position) {
-        // on below line we are setting data to our item of
-        // recycler view and all its views.
+        // Setting data to RecyclerView
         CurrencyModel modal = currencyModels.get(position);
         holder.nameTV.setText(modal.getName());
         holder.rateTV.setText("$ " + df2.format(modal.getPrice()));
@@ -52,20 +47,16 @@ public class CurrencyRVAdapter extends RecyclerView.Adapter<CurrencyRVAdapter.Cu
 
     @Override
     public int getItemCount() {
-        // on below line we are returning
-        // the size of our array list.
         return currencyModels.size();
     }
 
-    // on below line we are creating our view holder class
-    // which will be used to initialize each view of our layout file.
+    // Create Viewholder class
     public class CurrencyViewholder extends RecyclerView.ViewHolder {
         private TextView symbolTV, rateTV, nameTV;
 
         public CurrencyViewholder(@NonNull View itemView) {
             super(itemView);
-            // on below line we are initializing all
-            // our text views along with its ids.
+            // Initialize all textViews
             symbolTV = itemView.findViewById(R.id.idTVSymbol);
             rateTV = itemView.findViewById(R.id.idTVRate);
             nameTV = itemView.findViewById(R.id.idTVName);

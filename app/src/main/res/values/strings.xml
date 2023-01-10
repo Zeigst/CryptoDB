@@ -5,5 +5,7 @@
     <string name="tab_title_3">PROFILE</string>
 
     <string name="search_cc_hint">Search Cryptocurrency</string>
+    <string name="db_title_1">CRYPTOCURRENCY</string>
+    <string name="db_title_2">DASHBOARD</string>
 
 </resources>
