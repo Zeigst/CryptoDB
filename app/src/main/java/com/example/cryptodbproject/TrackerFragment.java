@@ -7,6 +7,7 @@ import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
@@ -37,6 +38,7 @@ public class TrackerFragment extends Fragment {
     private ArrayList<CurrencyModel> currencyModelArrayList;
     private CurrencyRVAdapter currencyRVAdapter;
     private ProgressBar loadingPB;
+    private Button refresh_button2;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -50,6 +52,7 @@ public class TrackerFragment extends Fragment {
         loadingPB = (ProgressBar) getView().findViewById(R.id.idPBLoading);
         currencyRV = (RecyclerView) getView().findViewById(R.id.idRVcurrency);
         currencyModelArrayList = new ArrayList<>();
+        refresh_button2 = (Button) getView().findViewById(R.id.refresh_button2);
 
         Context context = getActivity();
         currencyRVAdapter = new CurrencyRVAdapter(currencyModelArrayList, context);
@@ -77,6 +80,15 @@ public class TrackerFragment extends Fragment {
             public void afterTextChanged(Editable s) {
                 // Call filter function when text is changed
                 filter(s.toString());
+            }
+        });
+
+        // Refresh Data
+        refresh_button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                currencyModelArrayList.clear();
+                getData();
             }
         });
     }

@@ -26,6 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/idEdtCurrency"
+        android:layout_above="@id/refresh_button2"
         android:layout_marginTop="0dp"
         tools:listitem="@layout/currency_rv_item" />
 
@@ -35,5 +36,20 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:visibility="gone" />
+
+    <Button
+        android:id="@+id/refresh_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        android:backgroundTint="@color/black_shade_1"
+        android:text="Refresh"
+        android:textColor="@color/green_shade_1"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        />
 
 </RelativeLayout>
